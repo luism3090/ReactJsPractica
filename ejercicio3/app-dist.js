@@ -15,7 +15,12 @@ var User2 = function User2(props) {
 	var template = React.createElement(
 		"div",
 		null,
-		React.createElement("img", { src: props.url, alt: props.name })
+		React.createElement("img", { src: props.url, alt: props.name }),
+		React.createElement(
+			"p",
+			null,
+			props.name
+		)
 	);
 
 	return template;

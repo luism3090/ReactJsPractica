@@ -23,11 +23,13 @@ const User2 = props =>
 	var template = 	(
 						<div> 
 							<img src={props.url} alt={props.name} />
+							<p>{props.name}</p>
 						</div>
 					);
 
 	return template;
 
 }
+
 
 ReactDOM.render(<User2 url="react_js.png" name="ReactJs"/>,elemento2)
